@@ -1,0 +1,151 @@
+//CENTRO TOTAL
+
+@mixin flex_column_center_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+// CENTRO HORIZONTAL (EN EL WIDTH) MODIFICO EL EJE VERTICAL
+@mixin flex_column_center_around{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-around;
+
+}
+@mixin flex_column_center_start{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+@mixin flex_column_center_end{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+@mixin flex_column_center_between{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+//CENTRO VERTICAL (EN EL HEIGHT) MODIFICO EJE HORIZONTAL
+
+@mixin flex_column_around_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: space-around;
+	justify-content: center ;
+
+}
+@mixin flex_column_start_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+
+}
+@mixin flex_column_end_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+@mixin flex_column_between_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: space-between;
+	justify-content: center ;
+
+}
+
+
+@mixin flex_column_center_center{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+// CENTRO HORIZONTAL (EN EL WIDTH) MODIFICO EL EJE VERTICAL
+@mixin flex_row_center_around{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around;
+
+}
+@mixin flex_row_center_start{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+@mixin flex_row_center_end{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: flex-end;
+
+}
+@mixin flex_row_center_between{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+//CENTRO VERTICAL (EN EL HEIGHT) MODIFICO EJE HORIZONTAL
+
+
+@mixin flex_row_center_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+@mixin flex_row_around_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: space-around;
+	justify-content: center ;
+
+}
+@mixin flex_row_start_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: center;
+
+}
+@mixin flex_row_end_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: center;
+
+}
+@mixin flex_row_between_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: space-between;
+	justify-content: center ;
+
+}
+
+
