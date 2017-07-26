@@ -77,6 +77,13 @@
 	justify-content: center;
 
 }
+@mixin flex_column_end_start{
+	display:flex;
+	flex-flow: column nowrap;
+	align-items: flex-end;
+	justify-content: start;
+
+}
 
 // CENTRO HORIZONTAL (EN EL WIDTH) MODIFICO EL EJE VERTICAL
 @mixin flex_row_center_around{
@@ -145,6 +152,27 @@
 	flex-flow: row nowrap;
 	align-items: space-between;
 	justify-content: center ;
+
+}
+@mixin flex_row_end_around{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: space-around;
+
+}
+@mixin flex_row_start_end{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	justify-content: end;
+
+}
+@mixin flex_row_end_start{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: start;
 
 }
 

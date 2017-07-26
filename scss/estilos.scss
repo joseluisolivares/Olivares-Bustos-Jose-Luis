@@ -70,106 +70,257 @@
 									// AQUÍ EMPIEZA HEADER
 
 header{
-	@include flex_column_end_center; 
+	@include flex_column_start_center; 
 	width: 100%;
 	height: 100vh;
-	background-color:$blanco;
+	background-color:black;
 	.menu{
-		@include flex_column_center_center; 
+		@include flex_column_center_between; 
 		position: absolute;
-		// background-color: $blanco;
 		width: 100%;
 		height: 100vh;
+		background-color: transparent;
 		z-index: 1;
-		// margin-top: 50px;
-		// margin-right: 5vw;
-		p{
+		.sub_menu1{
+			@include flex_row_center_center; 
+			width: 100%;
+			// background-color: red;
+			margin-top: 6vh;
+			color:$blanco;
+			font-size: 1.8vw;
+			@media screen and (max-width: 850px){
+				font-size: 2.5vw;
+			}
+			@media screen and (max-width: 750px){
+				font-size: 2.9vw;
+			}
+			@media screen and (max-width: 600px){
+				font-size: 3.9vw;
+				margin-top:10vh;
+			}
+			@media screen and (max-width: 500px){
+				font-size: 4.3vw;
+				margin-top:12vh;
+			}
+			@media screen and (max-width: 400px){
+				font-size: 4.8vw;
+				margin-top:15vh;
+			}
 			
 		}
-		.menu1{
-			@include flex_row_center_between; 
-			color:orange;
-			// background-color: red;
+		.birds{
+			@include flex_row_center_around;
+			// background-color: red; 
+			height: 250px;
 			width: 100%;
-			margin-bottom: 3.5vw;
+			margin-top: 10vh;
+			@media screen and (max-width: 600px){
+			@include flex_column_center_around;
 
-			.sobre{
-			@include flex_row_center_center; 
+				font-size: 2.4vw;
+				width: 10vw;
+				border:none;
+				margin-left:10vw;
+				display:none;
 
-				margin-left: 8.5vw;
-				// border-radius: 50%;
-				background-color: black;
-				width: 15vw;
-				height: 10vh;
-				border-style: solid;
-    			border-color: $blanco;
-    			transform: rotate(20deg);
-    			font-size: 1.5vw;
+
+				}
+			.html{
+				@include flex_column_center_center; 
+				background-color: transparent;
+				border-radius: 10%;
 				color:$blanco;
-				cursor: pointer;
-
-
-			}
-			.sobre:hover{
-				background-color: $blanco;
 				border-style: solid;
-    			border-color: black;
-    			transform: rotate(360deg);
-    			color:black;
+				border-color: lightblue;
+				cursor:pointer;
+				font-size: 1.2vw;
+				width: 8vw;
+				height: 5vh;
+				display:none;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+				@media screen and (max-width: 950px){
+				font-size: 1.7vw;
+				width: 10vw;
+
+				}
+				@media screen and (max-width: 768px){
+				font-size: 2vw;
+				width: 10vw;
+
+				}
+				@media screen and (max-width: 600px){
+				font-size: 2.4vw;
+				width: 10vw;
+				border:none;
+				margin-left:10vw;
+				display:none;
 
 
+				}
+				@media screen and (max-width: 500px){
+				font-size: 3vw;
+				width: 10vw;
 
-			}
-			.portfolio{
-				margin-right: 8.5vw;
-				@extend .sobre;
-    			transform: rotate(-20deg);
-
-			}
+				}
+				@media screen and (max-width: 425px){
+				font-size: 3.4vw;
+				width: 10vw;
 
 
-		}
-		.menu2{
-			@extend .menu1;
-			.cv{
-				margin-left: 8.5vw;
-    			transform: rotate(-20deg);
-				@extend .sobre;
-				@extend .portfolio;
+				}
+				
 				
 			}
-			.contacto{
-				margin-right: 8.5vw;
-				@extend .sobre;
+			.html:hover{
+				border-style: solid;
+				border-color: black;
+				color:$blanco;
 
 			}
-		}
+			.css3{
+				@extend .html;
+				margin-top: -50vh;
+				width: 8vw;
+				@media screen and (max-width: 600px){
+					width: 14vw;
+					display:none
+				}
+			}
+			.Boostrap{
+				@extend .html;
+				margin-top: 20vh;
+				width: 8vw;
+				@media screen and (max-width: 768px){
+					width: 10vw;
+				}
+				@media screen and (max-width: 600px){
+					width: 16vw;
+				}
+			}
+			.Javascript{
+				@extend .html;
+				margin-top: -35vh;
+				width: 8vw;
+				@media screen and (max-width: 950px){
+					width: 10vw;
+				}
+				@media screen and (max-width: 768px){
+					width: 12vw;
+				}
+				@media screen and (max-width: 600px){
+					width: 18vw;
+					display:none;
+				}
+			}
+			.Jquery{
+				@extend .html;
+				margin-top: 15vh;
+				width: 8vw;
+				@media screen and (max-width: 600px){
+					width: 14vw;
+				}
+			}
+			.Responsive{
+				@extend .html;
+				margin-top: -5vh;
+				width: 15vw;
+				@media screen and (max-width: 950px){
+					width: 20vw;
+				}
+				@media screen and (max-width: 650px){
+					width: 35vw;
+				}
 
+			}
+			.Angular{
+				@extend .html;
+				margin-top: -53vh;
+				width: 8vw;
+				@media screen and (max-width: 768px){
+					width: 10vw;
+				}
+				@media screen and (max-width: 600px){
+					width: 12vw;
+
+				}
+			}
+			.PHP{
+				@extend .html;
+				margin-top: 5vh;
+				width: 7vw;
+				@media screen and (max-width: 950px){
+					width: 10vw;
+				}
+				@media screen and (max-width: 768px){
+					width: 12vw;
+				}
+				@media screen and (max-width: 600px){
+					width: 18vw;
+					margin-right: 15vw;
+
+				}
+			}
+
+		}
+		
+		.sub_menu2{
+			@extend .sub_menu1;
+			font-size: 1.3vw;
+			@media screen and (max-width: 1100px){
+				font-size: 1.7vw;
+			}
+			@media screen and (max-width: 900px){
+				font-size: 2vw;
+			}
+			@media screen and (max-width: 750px){
+				font-size: 2.4vw;
+			}
+			@media screen and (max-width: 600px){
+				font-size: 3.3vw;
+
+			}
+			@media screen and (max-width: 500px){
+				font-size: 4vw;
+			}
+
+			p{
+				cursor: pointer;
+				margin-right: 1.5vw;
+				@media screen and (max-width: 600px){
+					margin-right: 2.1vw;
+				}
+
+			}
+			p:hover{
+				color:black;
+				cursor:pointer;
+			}
+		}
+		span{
+			@extend .sub_menu1;
+			width: 0px;
+			// background-color: red;
+			margin-bottom: 6vh;
+			font-size: 5vw;
+			@media screen and (max-width: 600px){
+				font-size: 8vw;
+			}
+		}
+		span:hover{
+			color:orange;
+			cursor:pointer;
+
+		}
 	}
+	
 	.imagen_header{
-		@include flex_column_center_center; 
+		// @include flex_column_start_center; 
 		width: 100%;
 		height: 100vh;
-
 	}
-	// .sub_menu{
-	// 	@include flex_column_center_center; 
-	// 	width: 100%;
-	// 	height: 20vh;
-
-	// }
-	
 }
-
-
-
-
-
-
-
-
-
-
 
 									// AQUÍ TERMINA HEADER
 

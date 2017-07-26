@@ -13,15 +13,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #fff;
+  background-color: black;
 }
 header .menu {
   display: -webkit-box;
@@ -34,33 +34,16 @@ header .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-}
-header .menu .menu1, header .menu .menu2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: orange;
+  position: absolute;
   width: 100%;
-  margin-bottom: 3.5vw;
+  height: 100vh;
+  background-color: transparent;
+  z-index: 1;
 }
-header .menu .menu1 .sobre, header .menu .menu2 .sobre, header .menu .menu1 .portfolio, header .menu .menu2 .portfolio, header .menu .menu2 .cv, header .menu .menu2 .contacto {
+header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,40 +57,78 @@ header .menu .menu1 .sobre, header .menu .menu2 .sobre, header .menu .menu1 .por
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 8.5vw;
-  background-color: black;
-  width: 15vw;
-  height: 10vh;
-  border-style: solid;
-  border-color: #fff;
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
-  font-size: 1.5vw;
+  width: 100%;
+  margin-top: 6vh;
   color: #fff;
-  cursor: pointer;
+  font-size: 1.8vw;
 }
-header .menu .menu1 .sobre:hover, header .menu .menu2 .sobre:hover, header .menu .menu1 .portfolio:hover, header .menu .menu2 .portfolio:hover, header .menu .menu2 .cv:hover, header .menu .menu2 .contacto:hover {
-  background-color: #fff;
-  border-style: solid;
-  border-color: black;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  color: black;
+@media screen and (max-width: 850px) {
+  header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
+    font-size: 2.5vw;
+  }
 }
-header .menu .menu1 .portfolio, header .menu .menu2 .portfolio, header .menu .menu2 .cv {
-  margin-right: 8.5vw;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+@media screen and (max-width: 750px) {
+  header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
+    font-size: 2.9vw;
+  }
 }
-header .menu .menu2 .cv {
-  margin-left: 8.5vw;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+@media screen and (max-width: 600px) {
+  header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
+    font-size: 3.9vw;
+    margin-top: 10vh;
+  }
 }
-header .menu .menu2 .contacto {
-  margin-right: 8.5vw;
+@media screen and (max-width: 500px) {
+  header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
+    font-size: 4.3vw;
+    margin-top: 12vh;
+  }
 }
-header .imagen_header {
+@media screen and (max-width: 400px) {
+  header .menu .sub_menu1, header .menu .sub_menu2, header .menu span {
+    font-size: 4.8vw;
+    margin-top: 15vh;
+  }
+}
+header .menu .birds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 250px;
+  width: 100%;
+  margin-top: 10vh;
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 2.4vw;
+    width: 10vw;
+    border: none;
+    margin-left: 10vw;
+    display: none;
+  }
+}
+header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,6 +142,215 @@ header .imagen_header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: transparent;
+  border-radius: 10%;
+  color: #fff;
+  border-style: solid;
+  border-color: lightblue;
+  cursor: pointer;
+  font-size: 1.2vw;
+  width: 8vw;
+  height: 5vh;
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 950px) {
+  header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
+    font-size: 1.7vw;
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
+    font-size: 2vw;
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
+    font-size: 2.4vw;
+    width: 10vw;
+    border: none;
+    margin-left: 10vw;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
+    font-size: 3vw;
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  header .menu .birds .html, header .menu .birds .css3, header .menu .birds .Boostrap, header .menu .birds .Javascript, header .menu .birds .Jquery, header .menu .birds .Responsive, header .menu .birds .Angular, header .menu .birds .PHP {
+    font-size: 3.4vw;
+    width: 10vw;
+  }
+}
+header .menu .birds .html:hover, header .menu .birds .css3:hover, header .menu .birds .Boostrap:hover, header .menu .birds .Javascript:hover, header .menu .birds .Jquery:hover, header .menu .birds .Responsive:hover, header .menu .birds .Angular:hover, header .menu .birds .PHP:hover {
+  border-style: solid;
+  border-color: black;
+  color: #fff;
+}
+header .menu .birds .css3 {
+  margin-top: -50vh;
+  width: 8vw;
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .css3 {
+    width: 14vw;
+    display: none;
+  }
+}
+header .menu .birds .Boostrap {
+  margin-top: 20vh;
+  width: 8vw;
+}
+@media screen and (max-width: 768px) {
+  header .menu .birds .Boostrap {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .Boostrap {
+    width: 16vw;
+  }
+}
+header .menu .birds .Javascript {
+  margin-top: -35vh;
+  width: 8vw;
+}
+@media screen and (max-width: 950px) {
+  header .menu .birds .Javascript {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .menu .birds .Javascript {
+    width: 12vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .Javascript {
+    width: 18vw;
+    display: none;
+  }
+}
+header .menu .birds .Jquery {
+  margin-top: 15vh;
+  width: 8vw;
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .Jquery {
+    width: 14vw;
+  }
+}
+header .menu .birds .Responsive {
+  margin-top: -5vh;
+  width: 15vw;
+}
+@media screen and (max-width: 950px) {
+  header .menu .birds .Responsive {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  header .menu .birds .Responsive {
+    width: 35vw;
+  }
+}
+header .menu .birds .Angular {
+  margin-top: -53vh;
+  width: 8vw;
+}
+@media screen and (max-width: 768px) {
+  header .menu .birds .Angular {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .Angular {
+    width: 12vw;
+  }
+}
+header .menu .birds .PHP {
+  margin-top: 5vh;
+  width: 7vw;
+}
+@media screen and (max-width: 950px) {
+  header .menu .birds .PHP {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .menu .birds .PHP {
+    width: 12vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .birds .PHP {
+    width: 18vw;
+    margin-right: 15vw;
+  }
+}
+header .menu .sub_menu2 {
+  font-size: 1.3vw;
+}
+@media screen and (max-width: 1100px) {
+  header .menu .sub_menu2 {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .menu .sub_menu2 {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  header .menu .sub_menu2 {
+    font-size: 2.4vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu .sub_menu2 {
+    font-size: 3.3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .menu .sub_menu2 {
+    font-size: 4vw;
+  }
+}
+header .menu .sub_menu2 p {
+  cursor: pointer;
+  margin-right: 1.5vw;
+}
+@media screen and (max-width: 600px) {
+  header .menu .sub_menu2 p {
+    margin-right: 2.1vw;
+  }
+}
+header .menu .sub_menu2 p:hover {
+  color: black;
+  cursor: pointer;
+}
+header .menu span {
+  width: 0px;
+  margin-bottom: 6vh;
+  font-size: 5vw;
+}
+@media screen and (max-width: 600px) {
+  header .menu span {
+    font-size: 8vw;
+  }
+}
+header .menu span:hover {
+  color: orange;
+  cursor: pointer;
+}
+header .imagen_header {
   width: 100%;
   height: 100vh;
 }
