@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$(".PHP").click(delete_PHP).mouseover(delete_PHP);
 	$(".Angular").click(delete_Angular).mouseover(delete_Angular);
 	$(".Responsive").click(delete_Responsive).mouseover(delete_Responsive);
-	$(".guardar_prueba").click(guardar_opinion);
+	$(".guardar_feedback").click(guardar_feedback);
 	$(".enviar_form").click(validar_form);
 	// $("#nombre").keyup(validar_form);
 	// $("#empresa").keyup(validar_form);
@@ -51,10 +51,39 @@ function delete_Responsive(){
 	$(".Responsive").fadeOut(500);
 }
 
-function guardar_opinion(){
-	var posit2 = $(".posit2").val();
-	if (posit2 != "") {
-		$(".posit2").prop('disabled', true);
+function guardar_feedback(){
+	var textarea_marco = $(".textarea_marco").val();
+	var textarea_marco2 = $(".textarea_marco2").val();
+	var textarea_marco3 = $(".textarea_marco3").val();
+	var textarea_marco11 = $(".textarea_marco11").val();
+	var textarea_marcoA = $(".textarea_marcoA").val();
+	var textarea_marcoB = $(".textarea_marcoB").val();
+	var textarea_marcoC = $(".textarea_marcoC").val();
+	var textarea_marcoD = $(".textarea_marcoD").val();
+
+	if (textarea_marco != "") {
+		$(".textarea_marco").prop('disabled', true);
+	}
+	if (textarea_marco2 != "") {
+		$(".textarea_marco2").prop('disabled', true);
+	}
+	if (textarea_marco3 != "") {
+		$(".textarea_marco3").prop('disabled', true);
+	}
+	if (textarea_marco11 != "") {
+		$(".textarea_marco11").prop('disabled', true);
+	}
+	if (textarea_marcoA != "") {
+		$(".textarea_marcoA").prop('disabled', true);
+	}
+	if (textarea_marcoB != "") {
+		$(".textarea_marcoB").prop('disabled', true);
+	}
+	if (textarea_marcoC != "") {
+		$(".textarea_marcoC").prop('disabled', true);
+	}
+	if (textarea_marcoD != "") {
+		$(".textarea_marcoD").prop('disabled', true);
 	}
 	
 	
