@@ -175,5 +175,19 @@
 	justify-content: start;
 
 }
+@mixin flex_row_end_end{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: flex-end;
+	justify-content: end;
+
+}
+@mixin flex_row_around_center{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: space-around ;
+
+}
 
 

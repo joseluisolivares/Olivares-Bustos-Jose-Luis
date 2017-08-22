@@ -73,7 +73,7 @@ header{
 	@include flex_column_start_center; 
 	width: 100%;
 	height: 100vh;
-	background-color:black;
+	// background-color:black;
 	.menu{
 		@include flex_column_center_between; 
 		position: absolute;
@@ -114,7 +114,7 @@ header{
 			height: 250px;
 			width: 100%;
 			margin-top: 10vh;
-			@media screen and (max-width: 600px){
+			@media screen and (max-width: 768px){
 			@include flex_column_center_around;
 
 				font-size: 2.4vw;
@@ -140,6 +140,26 @@ header{
 				text-align: center;
 				justify-content: center;
 				align-items: center;
+				animation: girar 10s infinite linear;
+				// animation: right 5s infinite ease-in-out; 
+				// animation: left 5s infinite ease-in-out; 
+				@keyframes girar {
+   				from { transform: rotate(0deg)  translate(-100px) rotate(0deg); }
+    			to { transform: rotate(360deg) translate(-100px) rotate(-360deg); }
+}
+
+				// @keyframes right {
+    //            		0%   { transform: translate(-95px);  }
+    //        			50%  { transform: translate(95px);   }
+    //        			100% { transform: translate(-95px);  }
+    //         	}
+
+    //         	@keyframes left {
+    //             	0%   { transform: translate(95px);   }
+    //         		50%  { transform: translate(-95px);  }
+    //         		100% { transform: translate(95px);   }
+    //         	}
+            	
 				@media screen and (max-width: 950px){
 				font-size: 1.7vw;
 				width: 10vw;
@@ -150,28 +170,6 @@ header{
 				width: 10vw;
 
 				}
-				@media screen and (max-width: 600px){
-				font-size: 2.4vw;
-				width: 10vw;
-				border:none;
-				margin-left:10vw;
-				display:none;
-
-
-				}
-				@media screen and (max-width: 500px){
-				font-size: 3vw;
-				width: 10vw;
-
-				}
-				@media screen and (max-width: 425px){
-				font-size: 3.4vw;
-				width: 10vw;
-
-
-				}
-				
-				
 			}
 			.html:hover{
 				border-style: solid;
@@ -183,10 +181,7 @@ header{
 				@extend .html;
 				margin-top: -50vh;
 				width: 8vw;
-				@media screen and (max-width: 600px){
-					width: 14vw;
-					display:none
-				}
+				
 			}
 			.Boostrap{
 				@extend .html;
@@ -195,9 +190,7 @@ header{
 				@media screen and (max-width: 768px){
 					width: 10vw;
 				}
-				@media screen and (max-width: 600px){
-					width: 16vw;
-				}
+				
 			}
 			.Javascript{
 				@extend .html;
@@ -209,18 +202,13 @@ header{
 				@media screen and (max-width: 768px){
 					width: 12vw;
 				}
-				@media screen and (max-width: 600px){
-					width: 18vw;
-					display:none;
-				}
+				
 			}
 			.Jquery{
 				@extend .html;
 				margin-top: 15vh;
 				width: 8vw;
-				@media screen and (max-width: 600px){
-					width: 14vw;
-				}
+				
 			}
 			.Responsive{
 				@extend .html;
@@ -229,9 +217,7 @@ header{
 				@media screen and (max-width: 950px){
 					width: 20vw;
 				}
-				@media screen and (max-width: 650px){
-					width: 35vw;
-				}
+				
 
 			}
 			.Angular{
@@ -241,26 +227,21 @@ header{
 				@media screen and (max-width: 768px){
 					width: 10vw;
 				}
-				@media screen and (max-width: 600px){
-					width: 12vw;
-
-				}
+				
 			}
 			.PHP{
 				@extend .html;
 				margin-top: 5vh;
 				width: 7vw;
+				margin-right: 8vw;
+
 				@media screen and (max-width: 950px){
 					width: 10vw;
 				}
 				@media screen and (max-width: 768px){
 					width: 12vw;
 				}
-				@media screen and (max-width: 600px){
-					width: 18vw;
-					margin-right: 15vw;
-
-				}
+				
 			}
 
 		}
@@ -268,6 +249,7 @@ header{
 		.sub_menu2{
 			@extend .sub_menu1;
 			font-size: 1.3vw;
+			color:$blanco;
 			@media screen and (max-width: 1100px){
 				font-size: 1.7vw;
 			}
@@ -276,6 +258,9 @@ header{
 			}
 			@media screen and (max-width: 750px){
 				font-size: 2.4vw;
+			}
+			@media screen and (max-width: 768px){
+				margin-top: 50vh;
 			}
 			@media screen and (max-width: 600px){
 				font-size: 3.3vw;
@@ -294,7 +279,7 @@ header{
 
 			}
 			p:hover{
-				color:black;
+				color:orange;
 				cursor:pointer;
 			}
 		}
@@ -319,10 +304,576 @@ header{
 		// @include flex_column_start_center; 
 		width: 100%;
 		height: 100vh;
+		// opacity: 0.5;
 	}
 }
 
 									// AQUÍ TERMINA HEADER
+
+
+									//AQUÍ EMPIEZA ABOUT ME
+
+	
+.about_me{
+	@include flex_row_center_center;	
+	height: 100vh;
+	width: 100%;
+	background-color: #e3f2fd;
+	@media screen and (max-width: 730px){
+		@include flex_column_center_center;	
+
+		}
+	
+	.cabecera{
+		@include flex_column_center_center;	
+		width: 50%;
+		height: 40vh;
+		// background-color: red;
+
+		.subcabecera{
+			font-family: 'Dancing Script', cursive;
+			font-size: 2vw;
+			@media screen and (max-width: 1100px){
+				font-size: 2.5vw;
+
+			}
+			@media screen and (max-width: 850px){
+				font-size: 3vw;
+
+			}
+			@media screen and (max-width: 730px){
+				font-size: 3.8vw;
+
+			}
+			@media screen and (max-width: 600px){
+				font-size: 4.5vw;
+
+			}
+			@media screen and (max-width: 400px){
+				font-size: 5vw;
+
+			}
+		}
+		.mi_foto{
+			border-radius: 50%;
+			width: 8vw;
+			height: 12vh;
+			@media screen and (max-width: 600px){
+				width: 12vw;
+				height: 14vh;
+
+			}
+			@media screen and (max-width: 450px){
+				width: 14vw;
+				height: 14vh;
+
+			}
+		}
+	}
+	.body_cv{
+		@include flex_column_center_center;	
+			// background-color: black;
+			height: 70vh;
+			width: 80%;
+			
+		.body_cv1{
+			@include flex_row_center_center;	
+			// background-color: orange;
+			height: 50%;
+			width: 100%;
+			
+
+			.body_cv1a{
+				@include flex_column_center_center;
+				// background-color: yellow;
+				height: 100%;
+				width: 33.3%;
+			    margin-right: 2%;
+			    
+
+				.cv_imagen1{
+					@include flex_row_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: none;
+					}
+					.click_abajo{
+						display: none;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						
+					}
+				}
+				.cv_imagen1:hover{
+					@include flex_column_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: inline;
+						color:#1C2331;
+						font-size: 5vw;
+						animation: 5s bote 10;
+						@keyframes bote {
+						  20%, 50%, 80% {
+						    -moz-transform: translateY(0);
+						  }
+
+						  40% {
+						    -moz-transform: translateY(-30px);
+						  }
+
+						  65% {
+						    -moz-transform: translateY(-15px);
+						  }
+						}
+						
+						// width: 20vw;
+						// height: 10vh;
+					}
+					.click_abajo{
+						display: inline;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						display: none;
+						
+					}
+				}
+				
+				.modal1{
+					@include flex_row_center_center;
+					height: 30%;
+					width: 100%;
+					text-decoration: underline;
+
+					.button_objetivo{
+						width: 100%;
+						height: 100%;
+						border:none;
+						background-color: lightblue;
+						@media screen and  (max-width: 650px){
+							font-size: 2.2vw;
+						}
+						@media screen and  (max-width: 450px){
+							font-size: 2.7vw;
+						}
+
+					}
+					#myModalLabel{
+						text-align: center;
+						color: #428bca;
+					}
+				}	
+			}
+			.body_cv1b{
+				@include flex_column_center_center;
+				// background-color: pink;
+				height: 100%;
+				width: 33.3%;
+				margin-right: 2%;
+				
+				.cv_imagen1{
+					@include flex_row_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: none;
+					}
+					.click_abajo{
+						display: none;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.cv_imagen1:hover{
+					@include flex_column_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: inline;
+						color:#1C2331;
+						font-size: 5vw;
+						animation: 5s bote 10;
+						@keyframes bote {
+						  20%, 50%, 80% {
+						    -moz-transform: translateY(0);
+						  }
+
+						  40% {
+						    -moz-transform: translateY(-30px);
+						  }
+
+						  65% {
+						    -moz-transform: translateY(-15px);
+						  }
+						}
+						// width: 20vw;
+						// height: 10vh;
+					}
+					
+					.click_abajo{
+						display: inline;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						display: none;
+						
+					}
+				}	
+				.modal1{
+					@include flex_row_center_center;
+					height: 30%;
+					width: 100%;
+					text-decoration: underline;
+
+					.button_objetivo{
+						width: 100%;
+						height: 100%;
+						border:none;
+						background-color: lightblue;
+						@media screen and  (max-width: 650px){
+							font-size: 2.2vw;
+						}
+						@media screen and  (max-width: 450px){
+							font-size: 2.7vw;
+						}
+
+					}
+					#myModalLabel1{
+						text-align: center;
+						color: #428bca;
+					}
+				}	
+
+			}
+			.body_cv1c{
+				@include flex_column_center_center;
+				// background-color: green;
+				height: 100%;
+				width: 33.3%;
+				
+				.cv_imagen1{
+					@include flex_row_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: none;
+					}
+					.click_abajo{
+						display: none;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.cv_imagen1:hover{
+					@include flex_column_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: inline;
+						color:#1C2331;
+						font-size: 5vw;
+						animation: 5s bote 10;
+						@keyframes bote {
+						  20%, 50%, 80% {
+						    -moz-transform: translateY(0);
+						  }
+
+						  40% {
+						    -moz-transform: translateY(-30px);
+						  }
+
+						  65% {
+						    -moz-transform: translateY(-15px);
+						  }
+						}
+						// width: 20vw;
+						// height: 10vh;
+					}
+					
+					.click_abajo{
+						display: inline;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						display: none;
+						
+					}
+				}	
+				.modal2{
+					@include flex_row_center_center;
+					height: 30%;
+					width: 100%;
+					text-decoration: underline;
+
+					.button_objetivo{
+						width: 100%;
+						height: 100%;
+						border:none;
+						background-color: lightblue;
+						@media screen and  (max-width: 650px){
+							font-size: 2.2vw;
+						}
+						@media screen and  (max-width: 450px){
+							font-size: 2.7vw;
+						}
+
+					}
+					#myModalLabel1{
+						text-align: center;
+						color: #428bca;
+					}
+				}	
+
+			}
+		}
+		.body_cv2{
+			@include flex_row_center_center;	
+			// background-color: red;
+			height: 50%;
+			width: 100%;
+			.body_cv2a{
+				@include flex_column_center_center;
+				// background-color: blue;
+				height: 100%;
+				width: 50%;	
+				margin-top: 4%;
+				.cv_imagen1{
+					@include flex_row_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: none;
+					}
+					.click_abajo{
+						display: none;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				.cv_imagen1:hover{
+					@include flex_column_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: inline;
+						color:#1C2331;
+						font-size: 5vw;
+						animation: 5s bote 10;
+						@keyframes bote {
+						  20%, 50%, 80% {
+						    -moz-transform: translateY(0);
+						  }
+
+						  40% {
+						    -moz-transform: translateY(-30px);
+						  }
+
+						  65% {
+						    -moz-transform: translateY(-15px);
+						  }
+						}
+						// width: 20vw;
+						// height: 10vh;
+					}
+					
+					.click_abajo{
+						display: inline;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						display: none;
+						
+					}
+				}	
+
+				.modal4{
+					@include flex_row_center_center;
+					height: 30%;
+					width: 100%;
+					text-decoration: underline;
+
+
+					.button_objetivo{
+						width: 100%;
+						height: 100%;
+						border:none;
+						background-color: lightblue;
+						@media screen and  (max-width: 650px){
+							font-size: 2.2vw;
+						}
+						@media screen and  (max-width: 450px){
+							font-size: 2.7vw;
+						}
+	
+
+					}
+					#myModalLabel1{
+						text-align: center;
+						color: #428bca;
+					}
+				}	
+
+			}
+			.body_cv2b{
+				@include flex_column_center_center;
+				// background-color: yellow;
+				height: 100%;
+				width: 50%;	
+				margin-top: 4%;
+				margin-left: 2%;
+				.cv_imagen1{
+					@include flex_row_center_center;
+					height: 70%;
+					width: 100%;
+					.glyphicon-triangle-bottom{
+						display: none;
+					}
+					.click_abajo{
+						display: none;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+					}
+
+				}
+				.cv_imagen1:hover{
+					@include flex_column_center_center;
+					height: 70%;
+					width: 100%;
+					
+					.glyphicon-triangle-bottom{
+						display: inline;
+						color:#1C2331;
+						font-size: 5vw;
+						animation: 5s bote 10;
+						@keyframes bote {
+						  20%, 50%, 80% {
+						    -moz-transform: translateY(0);
+						  }
+
+						  40% {
+						    -moz-transform: translateY(-30px);
+						  }
+
+						  65% {
+						    -moz-transform: translateY(-15px);
+						  }
+						}
+					}
+					
+					.click_abajo{
+						display: inline;
+					}
+					.img_objetivo{
+						width: 100%;
+						height: 100%;
+						display: none;
+						
+					}
+				}	
+
+				.modal5{
+					@include flex_row_center_center;
+					height: 30%;
+					width: 100%;
+					text-decoration: underline;
+					.button_objetivo{
+						width: 100%;
+						height: 100%;
+						border:none;
+						background-color: lightblue;
+						@media screen and  (max-width: 650px){
+							font-size: 2.2vw;
+						}
+						@media screen and  (max-width: 450px){
+							font-size: 2.7vw;
+						}
+
+					}
+					#myModalLabel1{
+						text-align: center;
+						color: #428bca;
+					}
+				}
+			}
+		}
+	}
+	
+	.footer_cv{
+		@include flex_column_center_center;	
+		width: 40%;
+		height: 30vh;
+		// background-color: pink;
+		.telefono{
+			@include flex_row_center_around;
+			align-items: baseline;
+			.glyphicon-phone-alt{
+				margin-right: 5%;
+				font-size: 1.5vw;
+				color:#ff4444;
+			}	
+
+		}
+		.email{
+			@extend .telefono;
+
+			.glyphicon-envelope{
+				@extend .glyphicon-phone-alt;
+				color:#ff4444;
+			}
+		}
+		.direccion{
+			@extend .telefono;
+			.glyphicon-map-marker{
+				@extend .glyphicon-phone-alt;
+				column-rule: #ff4444 ;
+
+			}
+		}
+		.datos_footer_cv{
+			font-size: 1vw;
+			@media screen and (max-width: 1100px){
+				font-size: 1.5vw;
+
+			}
+			@media screen and (max-width: 800px){
+				font-size: 1.8vw;
+
+			}
+			@media screen and (max-width: 650px){
+				font-size: 2.3vw;
+
+			}
+			@media screen and (max-width: 500px){
+				font-size: 3.2vw;
+
+			}
+		}
+	}
+}
+
+
+
+									//AQUÍ TERMINA ABOUT ME
+
+									//AQUÍ EMPIEZA FORMULARIO
+
+
 
 	#block{
 		width: 100%;
@@ -337,7 +888,7 @@ header{
 		// background-image: url(../imagenes/fondo_form.jpg);
 		background-repeat: no-repeat;
 		background-size: cover; 
-		form{
+		.section_form2{
 			display: flex;
 			flex-direction: column;
 			width: 55%;
@@ -362,7 +913,8 @@ header{
 				p{
 					font-size: 3vw;
 					color:darkblue;
-					font-family: 'Indie Flower', cursive;
+					// font-family: 'Indie Flower', cursive;
+					font-family: 'Dancing Script', cursive;
 					margin-top: 20px;
 					@media screen and (max-width: 1000px){
 						font-size: 3.5vw;
@@ -430,3 +982,107 @@ header{
 		}
 	}
 	
+	
+						// AQUÍ TERMINA FORMULARIO
+
+						// AQUÍ EMPIEZA FEEDBACK
+
+
+.feedback{
+	@include flex_column_center_center;	
+	width: 100%;
+	height: 100vh;
+	background-image: url(../imagenes/papel.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	.feedback_header{
+		@include flex_column_center_center;
+		width: 75vw;
+		height: 30vh;
+		// background-color: lightblue;
+		h1{
+			@include flex_column_center_center;
+			font-family: 'Bowlby One SC', cursive;
+			color:#9a9c12;
+			font-size: 3vw;
+
+		}
+		h4{
+			@include flex_column_center_center;
+			font-size: 1.8vw;
+			width: 100%;
+			font-family: 'Dancing Script', cursive;
+			color:#9a9c12;
+
+
+		}
+        
+
+	}
+	.feedback_body{
+		@include flex_row_center_around;
+		width: 100%;
+		height: 70vh;
+		// background-color: blue;
+		.marco{
+			width: 20vw;
+			height: 30vh;	
+			margin-bottom: 60vh;	
+			margin-left: 0vw;	
+	
+		}
+		.marco2{
+			@extend .marco;
+			margin-bottom: -35vh;	
+			margin-left: 0vw;			
+			
+		}
+		.marco3{
+			@extend .marco;
+			margin-bottom: 30vh;	
+			margin-left: 1vw;			
+	
+		}
+		.marco11{
+			@extend .marco;
+			margin-bottom: 80vh;	
+			margin-left: 0vw;			
+	
+		}
+		.textarea_marco{
+			margin-bottom: 60vh;
+			height: 23vh;
+			width: 16.8vw;
+			border:none;
+			margin-left: -24.6vw;
+			background-color: lightgray;
+		}
+		.textarea_marco2{
+			margin-left: -24vw;
+			width: 15.5vw;
+			border:none;
+			margin-bottom: -35vh;	
+			height: 23vh;
+			background-color: lightgray;
+
+		}
+		.textarea_marco3{
+			margin-left: -23vw;
+			width: 13vw;
+			border:none;
+			margin-bottom: 30vh;
+			height: 16.5vh;
+			background-color: lightgray;
+
+		}
+		.textarea_marco11{
+			margin-left: -25.3vw;
+			width: 17.7vw;
+			border:none;
+			margin-bottom: 80vh;
+			height: 24.4vh;
+			background-color: lightgray;
+
+		}
+	}		
+}

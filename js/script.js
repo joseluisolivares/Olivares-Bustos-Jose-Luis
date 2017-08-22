@@ -7,6 +7,11 @@ $(document).ready(function() {
 	$(".PHP").click(delete_PHP).mouseover(delete_PHP);
 	$(".Angular").click(delete_Angular).mouseover(delete_Angular);
 	$(".Responsive").click(delete_Responsive).mouseover(delete_Responsive);
+	$(".guardar_prueba").click(guardar_opinion);
+	$(".enviar_form").click(validar_form);
+	// $("#nombre").keyup(validar_form);
+	// $("#empresa").keyup(validar_form);
+    // $("#myModal").modal("show");  
 	show();
 });
 
@@ -44,4 +49,39 @@ function delete_Angular(){
 }
 function delete_Responsive(){
 	$(".Responsive").fadeOut(500);
+}
+
+function guardar_opinion(){
+	var posit2 = $(".posit2").val();
+	if (posit2 != "") {
+		$(".posit2").prop('disabled', true);
+	}
+	
+	
+}
+function validar_form(){
+	var nombre = $("#nombre").val();
+	var empresa = $("#empresa").val();
+	var email = $(".email").val();
+
+	if (nombre=="") {
+		$("#nombre").css("background-color","red");
+	}else{
+		$("#nombre").css("background-color","darkblue");
+
+	}
+	if (empresa=="") {
+		$("#empresa").css("background-color","red");
+	}else{
+		$("#empresa").css("background-color","darkblue");
+
+	}
+	if (email=="") {
+		$(".email").css("background-color","red");
+	}else{
+		$(".email").css("background-color","darkblue");
+
+	}
+
+
 }
