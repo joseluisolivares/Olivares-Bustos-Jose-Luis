@@ -295,6 +295,7 @@ header .menu .sub_menu2 {
 header .menu .sub_menu2 p {
   cursor: pointer;
   margin-right: 1.5vw;
+  font-family: 'Bowlby One SC', cursive;
 }
 @media screen and (max-width: 600px) {
   header .menu .sub_menu2 p {
@@ -309,6 +310,30 @@ header .menu span {
   width: 0px;
   margin-bottom: 6vh;
   font-size: 5vw;
+  -webkit-animation: 5s bote 100;
+          animation: 5s bote 100;
+}
+@-webkit-keyframes bote {
+  20%, 50%, 80% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  65% {
+    -moz-transform: translateY(-15px);
+  }
+}
+@keyframes bote {
+  20%, 50%, 80% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  65% {
+    -moz-transform: translateY(-15px);
+  }
 }
 @media screen and (max-width: 600px) {
   header .menu span {
@@ -524,17 +549,6 @@ header .imagen_header {
   font-size: 5vw;
   -webkit-animation: 5s bote 10;
           animation: 5s bote 10;
-}
-@-webkit-keyframes bote {
-  20%, 50%, 80% {
-    -moz-transform: translateY(0);
-  }
-  40% {
-    -moz-transform: translateY(-30px);
-  }
-  65% {
-    -moz-transform: translateY(-15px);
-  }
 }
 @keyframes bote {
   20%, 50%, 80% {

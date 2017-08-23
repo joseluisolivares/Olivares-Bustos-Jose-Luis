@@ -273,6 +273,7 @@ header{
 			p{
 				cursor: pointer;
 				margin-right: 1.5vw;
+				font-family: 'Bowlby One SC', cursive;
 				@media screen and (max-width: 600px){
 					margin-right: 2.1vw;
 				}
@@ -289,6 +290,20 @@ header{
 			// background-color: red;
 			margin-bottom: 6vh;
 			font-size: 5vw;
+			animation: 5s bote 100;
+			@keyframes bote {
+			  20%, 50%, 80% {
+			    -moz-transform: translateY(0);
+			  }
+
+			  40% {
+			    -moz-transform: translateY(-30px);
+			  }
+
+			  65% {
+			    -moz-transform: translateY(-15px);
+			  }
+			}
 			@media screen and (max-width: 600px){
 				font-size: 8vw;
 			}
@@ -296,7 +311,6 @@ header{
 		span:hover{
 			color:orange;
 			cursor:pointer;
-
 		}
 	}
 	
