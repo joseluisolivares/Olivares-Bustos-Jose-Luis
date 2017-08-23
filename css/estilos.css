@@ -295,11 +295,12 @@ header .menu .sub_menu2 {
 header .menu .sub_menu2 p {
   cursor: pointer;
   margin-right: 1.5vw;
-  font-family: 'Bowlby One SC', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-size: 130%;
 }
 @media screen and (max-width: 600px) {
   header .menu .sub_menu2 p {
-    margin-right: 2.1vw;
+    margin-right: 2.5vw;
   }
 }
 header .menu .sub_menu2 p:hover {

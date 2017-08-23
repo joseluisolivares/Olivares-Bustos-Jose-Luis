@@ -273,9 +273,10 @@ header{
 			p{
 				cursor: pointer;
 				margin-right: 1.5vw;
-				font-family: 'Bowlby One SC', cursive;
+				font-family: 'Amatic SC', cursive;
+				font-size: 130%;
 				@media screen and (max-width: 600px){
-					margin-right: 2.1vw;
+					margin-right: 2.5vw;
 				}
 
 			}
