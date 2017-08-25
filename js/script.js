@@ -9,6 +9,10 @@ $(document).ready(function() {
 	$(".Responsive").click(delete_Responsive).mouseover(delete_Responsive);
 	$(".guardar_feedback").click(guardar_feedback);
 	$(".enviar_form").click(validar_form);
+	$(".conocerme").click(ocultar_about_me);
+	$(".conoceme").click(ocultar_about_me);
+	$(".conocerme").click(mostrar_about_me_s);
+	$(".conoceme").click(mostrar_about_me_s);
 	// $("#nombre").keyup(validar_form);
 	// $("#empresa").keyup(validar_form);
     // $("#myModal").modal("show");  
@@ -113,4 +117,12 @@ function validar_form(){
 	}
 
 
+}
+
+function ocultar_about_me(){
+	$(".about_me2").fadeOut(500);
+}
+function mostrar_about_me_s(){
+	$(".about_me1").fadeIn(3000);
+	$(".about_me3").fadeIn(3000);
 }

@@ -80,7 +80,14 @@
 @mixin flex_column_end_start{
 	display:flex;
 	flex-flow: column nowrap;
-	align-items: flex-end;
+	align-items: start;
+	justify-content: end;
+
+}
+@mixin flex_column_start_end{
+	display:flex;
+	flex-flow: row nowrap;
+	align-items: end;
 	justify-content: start;
 
 }
@@ -189,5 +196,7 @@
 	justify-content: space-around ;
 
 }
+
+
 
 

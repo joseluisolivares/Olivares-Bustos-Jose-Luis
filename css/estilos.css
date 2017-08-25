@@ -311,8 +311,8 @@ header .menu span {
   width: 0px;
   margin-bottom: 6vh;
   font-size: 5vw;
-  -webkit-animation: 5s bote 100;
-          animation: 5s bote 100;
+  -webkit-animation: 5s bote 10000;
+          animation: 5s bote 10000;
 }
 @-webkit-keyframes bote {
   20%, 50%, 80% {
@@ -364,12 +364,455 @@ header .imagen_header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #b9f6ca;
+}
+.about_me .about_me1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100vh;
+  background-color: #b9f6ca;
+}
+.about_me .about_me1 .cuadro1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 80vh;
+  background-color: blue;
+}
+.about_me .about_me1 .cuadro1 .hobbies1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 20%;
+  font-size: 2.5vw;
+  color: #90caf9;
+  background-color: #fff;
+}
+.about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
+  font-family: 'Dancing Script', cursive;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
+  height: 95%;
+  background-color: #90caf9;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .img_mtb {
+  width: 100%;
+  height: 70%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8vw;
+  padding-left: 10%;
+  color: #004d40;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: +1;
+  -webkit-filter: saturate(180%);
+          filter: saturate(180%);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
+  height: 95%;
+  background-color: #90caf9;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .img_restaurant {
+  width: 100%;
+  height: 70%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8vw;
+  padding-left: 10%;
+  color: #004d40;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: +1;
+  -webkit-filter: saturate(160%);
+          filter: saturate(160%);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+  height: 95%;
+  background-color: red;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B1:hover {
+  -webkit-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+  height: 95%;
+  background-color: yellow;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B2:hover {
+  -webkit-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+}
+.about_me .about_me2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 80vh;
+  background-color: #fff;
+  display: none;
+}
+.about_me .about_me2 .about_me_imagen_fondo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  height: 50%;
+  background-image: url(../imagenes/fondo27.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_me .about_me2 .about_me_imagen_fondo .about_me_imagen_mia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 22%;
+  height: 40%;
+}
+.about_me .about_me2 .about_me_imagen_fondo .about_me_imagen_mia .about_me_imagen_mia_B {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  margin-top: 70px;
+  margin-left: 3vw;
+}
+.about_me .about_me2 .about_me_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+.about_me .about_me2 .about_me_texto .sobre_mi {
+  font-size: 2.5vw;
+  font-family: 'Dancing Script', cursive;
+  color: #90caf9;
+}
+.about_me .about_me2 .about_me_texto .conocerme {
+  color: #42a5f5;
+  cursor: pointer;
+}
+.about_me .about_me2 .about_me_texto .conoceme {
+  font-size: 1.5vw;
+  font-family: 'Indie Flower', cursive;
+  color: #42a5f5;
+  padding-bottom: 20%;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about_me .about_me3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100vh;
+  background-color: #b9f6ca;
+}
+.about_me .about_me3 .cuadro3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 80vh;
+  background-color: pink;
+}
+
+.Curriculum_vitae {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
   width: 100%;
   background-color: #e3f2fd;
 }
 @media screen and (max-width: 730px) {
-  .about_me {
+  .Curriculum_vitae {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -385,7 +828,7 @@ header .imagen_header {
             justify-content: center;
   }
 }
-.about_me .cabecera {
+.Curriculum_vitae .cabecera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,53 +845,53 @@ header .imagen_header {
   width: 50%;
   height: 40vh;
 }
-.about_me .cabecera .subcabecera {
+.Curriculum_vitae .cabecera .subcabecera {
   font-family: 'Dancing Script', cursive;
   font-size: 2vw;
 }
 @media screen and (max-width: 1100px) {
-  .about_me .cabecera .subcabecera {
+  .Curriculum_vitae .cabecera .subcabecera {
     font-size: 2.5vw;
   }
 }
 @media screen and (max-width: 850px) {
-  .about_me .cabecera .subcabecera {
+  .Curriculum_vitae .cabecera .subcabecera {
     font-size: 3vw;
   }
 }
 @media screen and (max-width: 730px) {
-  .about_me .cabecera .subcabecera {
+  .Curriculum_vitae .cabecera .subcabecera {
     font-size: 3.8vw;
   }
 }
 @media screen and (max-width: 600px) {
-  .about_me .cabecera .subcabecera {
+  .Curriculum_vitae .cabecera .subcabecera {
     font-size: 4.5vw;
   }
 }
 @media screen and (max-width: 400px) {
-  .about_me .cabecera .subcabecera {
+  .Curriculum_vitae .cabecera .subcabecera {
     font-size: 5vw;
   }
 }
-.about_me .cabecera .mi_foto {
+.Curriculum_vitae .cabecera .mi_foto {
   border-radius: 50%;
   width: 8vw;
   height: 12vh;
 }
 @media screen and (max-width: 600px) {
-  .about_me .cabecera .mi_foto {
+  .Curriculum_vitae .cabecera .mi_foto {
     width: 12vw;
     height: 14vh;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .cabecera .mi_foto {
+  .Curriculum_vitae .cabecera .mi_foto {
     width: 14vw;
     height: 14vh;
   }
 }
-.about_me .body_cv {
+.Curriculum_vitae .body_cv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,7 +908,7 @@ header .imagen_header {
   height: 70vh;
   width: 80%;
 }
-.about_me .body_cv .body_cv1 {
+.Curriculum_vitae .body_cv .body_cv1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +925,7 @@ header .imagen_header {
   height: 50%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1a {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +943,7 @@ header .imagen_header {
   width: 33.3%;
   margin-right: 2%;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,17 +960,17 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1 .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1 .glyphicon-triangle-bottom {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1 .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1 .click_abajo {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1 .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1 .img_objetivo {
   width: 100%;
   height: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,7 +987,7 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .glyphicon-triangle-bottom {
   display: inline;
   color: #1C2331;
   font-size: 5vw;
@@ -562,15 +1005,15 @@ header .imagen_header {
     -moz-transform: translateY(-15px);
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .click_abajo {
   display: inline;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .img_objetivo {
   width: 100%;
   height: 100%;
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .modal1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .modal1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,27 +1031,27 @@ header .imagen_header {
   width: 100%;
   text-decoration: underline;
 }
-.about_me .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
   width: 100%;
   height: 100%;
   border: none;
   background-color: lightblue;
 }
 @media screen and (max-width: 650px) {
-  .about_me .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
     font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1a .modal1 .button_objetivo {
     font-size: 2.7vw;
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1a .modal1 #myModalLabel {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1a .modal1 #myModalLabel {
   text-align: center;
   color: #428bca;
 }
-.about_me .body_cv .body_cv1 .body_cv1b {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -626,7 +1069,7 @@ header .imagen_header {
   width: 33.3%;
   margin-right: 2%;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,17 +1086,17 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1 .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1 .glyphicon-triangle-bottom {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1 .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1 .click_abajo {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1 .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1 .img_objetivo {
   width: 100%;
   height: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,7 +1113,7 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .glyphicon-triangle-bottom {
   display: inline;
   color: #1C2331;
   font-size: 5vw;
@@ -688,15 +1131,15 @@ header .imagen_header {
     -moz-transform: translateY(-15px);
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .click_abajo {
   display: inline;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .img_objetivo {
   width: 100%;
   height: 100%;
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .modal1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .modal1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,27 +1157,27 @@ header .imagen_header {
   width: 100%;
   text-decoration: underline;
 }
-.about_me .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
   width: 100%;
   height: 100%;
   border: none;
   background-color: lightblue;
 }
 @media screen and (max-width: 650px) {
-  .about_me .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
     font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1b .modal1 .button_objetivo {
     font-size: 2.7vw;
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1b .modal1 #myModalLabel1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1b .modal1 #myModalLabel1 {
   text-align: center;
   color: #428bca;
 }
-.about_me .body_cv .body_cv1 .body_cv1c {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,7 +1194,7 @@ header .imagen_header {
   height: 100%;
   width: 33.3%;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,17 +1211,17 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1 .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1 .glyphicon-triangle-bottom {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1 .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1 .click_abajo {
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1 .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1 .img_objetivo {
   width: 100%;
   height: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,7 +1238,7 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .glyphicon-triangle-bottom {
   display: inline;
   color: #1C2331;
   font-size: 5vw;
@@ -813,15 +1256,15 @@ header .imagen_header {
     -moz-transform: translateY(-15px);
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .click_abajo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .click_abajo {
   display: inline;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .img_objetivo {
   width: 100%;
   height: 100%;
   display: none;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .modal2 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .modal2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -839,27 +1282,27 @@ header .imagen_header {
   width: 100%;
   text-decoration: underline;
 }
-.about_me .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
   width: 100%;
   height: 100%;
   border: none;
   background-color: lightblue;
 }
 @media screen and (max-width: 650px) {
-  .about_me .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
     font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv1 .body_cv1c .modal2 .button_objetivo {
     font-size: 2.7vw;
   }
 }
-.about_me .body_cv .body_cv1 .body_cv1c .modal2 #myModalLabel1 {
+.Curriculum_vitae .body_cv .body_cv1 .body_cv1c .modal2 #myModalLabel1 {
   text-align: center;
   color: #428bca;
 }
-.about_me .body_cv .body_cv2 {
+.Curriculum_vitae .body_cv .body_cv2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -876,7 +1319,7 @@ header .imagen_header {
   height: 50%;
   width: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2a {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -894,7 +1337,7 @@ header .imagen_header {
   width: 50%;
   margin-top: 4%;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,17 +1354,17 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1 .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1 .glyphicon-triangle-bottom {
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1 .click_abajo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1 .click_abajo {
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1 .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1 .img_objetivo {
   width: 100%;
   height: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,7 +1381,7 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .glyphicon-triangle-bottom {
   display: inline;
   color: #1C2331;
   font-size: 5vw;
@@ -956,15 +1399,15 @@ header .imagen_header {
     -moz-transform: translateY(-15px);
   }
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .click_abajo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .click_abajo {
   display: inline;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .img_objetivo {
   width: 100%;
   height: 100%;
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .modal4 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .modal4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,27 +1425,27 @@ header .imagen_header {
   width: 100%;
   text-decoration: underline;
 }
-.about_me .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
   width: 100%;
   height: 100%;
   border: none;
   background-color: lightblue;
 }
 @media screen and (max-width: 650px) {
-  .about_me .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
     font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv2 .body_cv2a .modal4 .button_objetivo {
     font-size: 2.7vw;
   }
 }
-.about_me .body_cv .body_cv2 .body_cv2a .modal4 #myModalLabel1 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2a .modal4 #myModalLabel1 {
   text-align: center;
   color: #428bca;
 }
-.about_me .body_cv .body_cv2 .body_cv2b {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1021,7 +1464,7 @@ header .imagen_header {
   margin-top: 4%;
   margin-left: 2%;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,17 +1481,17 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1 .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1 .glyphicon-triangle-bottom {
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1 .click_abajo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1 .click_abajo {
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1 .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1 .img_objetivo {
   width: 100%;
   height: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1065,7 +1508,7 @@ header .imagen_header {
   height: 70%;
   width: 100%;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .glyphicon-triangle-bottom {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .glyphicon-triangle-bottom {
   display: inline;
   color: #1C2331;
   font-size: 5vw;
@@ -1083,15 +1526,15 @@ header .imagen_header {
     -moz-transform: translateY(-15px);
   }
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .click_abajo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .click_abajo {
   display: inline;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .img_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .img_objetivo {
   width: 100%;
   height: 100%;
   display: none;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .modal5 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .modal5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,27 +1552,27 @@ header .imagen_header {
   width: 100%;
   text-decoration: underline;
 }
-.about_me .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
   width: 100%;
   height: 100%;
   border: none;
   background-color: lightblue;
 }
 @media screen and (max-width: 650px) {
-  .about_me .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
     font-size: 2.2vw;
   }
 }
 @media screen and (max-width: 450px) {
-  .about_me .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
+  .Curriculum_vitae .body_cv .body_cv2 .body_cv2b .modal5 .button_objetivo {
     font-size: 2.7vw;
   }
 }
-.about_me .body_cv .body_cv2 .body_cv2b .modal5 #myModalLabel1 {
+.Curriculum_vitae .body_cv .body_cv2 .body_cv2b .modal5 #myModalLabel1 {
   text-align: center;
   color: #428bca;
 }
-.about_me .footer_cv {
+.Curriculum_vitae .footer_cv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1146,7 +1589,7 @@ header .imagen_header {
   width: 40%;
   height: 30vh;
 }
-.about_me .footer_cv .telefono, .about_me .footer_cv .email, .about_me .footer_cv .direccion {
+.Curriculum_vitae .footer_cv .telefono, .Curriculum_vitae .footer_cv .email_envelope, .Curriculum_vitae .footer_cv .direccion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1163,38 +1606,38 @@ header .imagen_header {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.about_me .footer_cv .telefono .glyphicon-phone-alt, .about_me .footer_cv .email .glyphicon-phone-alt, .about_me .footer_cv .direccion .glyphicon-phone-alt, .about_me .footer_cv .email .glyphicon-envelope, .about_me .footer_cv .direccion .glyphicon-map-marker {
+.Curriculum_vitae .footer_cv .telefono .glyphicon-phone-alt, .Curriculum_vitae .footer_cv .email_envelope .glyphicon-phone-alt, .Curriculum_vitae .footer_cv .direccion .glyphicon-phone-alt, .Curriculum_vitae .footer_cv .email_envelope .glyphicon-envelope, .Curriculum_vitae .footer_cv .direccion .glyphicon-map-marker {
   margin-right: 5%;
   font-size: 1.5vw;
   color: #ff4444;
 }
-.about_me .footer_cv .email .glyphicon-envelope {
+.Curriculum_vitae .footer_cv .email_envelope .glyphicon-envelope {
   color: #ff4444;
 }
-.about_me .footer_cv .direccion .glyphicon-map-marker {
+.Curriculum_vitae .footer_cv .direccion .glyphicon-map-marker {
   -webkit-column-rule: #ff4444;
           column-rule: #ff4444;
 }
-.about_me .footer_cv .datos_footer_cv {
+.Curriculum_vitae .footer_cv .datos_footer_cv {
   font-size: 1vw;
 }
 @media screen and (max-width: 1100px) {
-  .about_me .footer_cv .datos_footer_cv {
+  .Curriculum_vitae .footer_cv .datos_footer_cv {
     font-size: 1.5vw;
   }
 }
 @media screen and (max-width: 800px) {
-  .about_me .footer_cv .datos_footer_cv {
+  .Curriculum_vitae .footer_cv .datos_footer_cv {
     font-size: 1.8vw;
   }
 }
 @media screen and (max-width: 650px) {
-  .about_me .footer_cv .datos_footer_cv {
+  .Curriculum_vitae .footer_cv .datos_footer_cv {
     font-size: 2.3vw;
   }
 }
 @media screen and (max-width: 500px) {
-  .about_me .footer_cv .datos_footer_cv {
+  .Curriculum_vitae .footer_cv .datos_footer_cv {
     font-size: 3.2vw;
   }
 }
@@ -1233,8 +1676,6 @@ header .imagen_header {
           justify-content: center;
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .section_form .section_form2 {
   display: -webkit-box;
