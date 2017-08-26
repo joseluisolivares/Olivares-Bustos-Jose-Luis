@@ -368,6 +368,42 @@ header .imagen_header {
   height: 100vh;
   background-color: #b9f6ca;
 }
+@media screen and (max-width: 900px) {
+  .about_me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 200vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 400vh;
+  }
+}
 .about_me .about_me1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,7 +420,15 @@ header .imagen_header {
           justify-content: center;
   width: 50%;
   height: 100vh;
+  display: none;
   background-color: #b9f6ca;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 {
+    width: 90%;
+    height: 48%;
+    display: inline;
+  }
 }
 .about_me .about_me1 .cuadro1 {
   display: -webkit-box;
@@ -402,7 +446,15 @@ header .imagen_header {
           justify-content: center;
   width: 90%;
   height: 80vh;
-  background-color: blue;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies1 {
   display: -webkit-box;
@@ -424,8 +476,38 @@ header .imagen_header {
   color: #90caf9;
   background-color: #fff;
 }
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 {
+    height: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 {
+    height: 5%;
+  }
+}
 .about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
   font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width: 1100px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
+    font-size: 4.3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies1 .aficiones {
+    font-size: 5.5vw;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 {
   display: -webkit-box;
@@ -444,6 +526,16 @@ header .imagen_header {
   width: 100%;
   height: 80%;
 }
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 {
+    height: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 {
+    height: 95%;
+  }
+}
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,6 +552,41 @@ header .imagen_header {
   width: 100%;
   height: 50%;
   background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 50%;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 {
   display: -webkit-box;
@@ -479,9 +606,29 @@ header .imagen_header {
   height: 95%;
   background-color: #90caf9;
 }
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .img_mtb {
   width: 100%;
   height: 70%;
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb {
   display: -webkit-box;
@@ -520,12 +667,32 @@ header .imagen_header {
   padding-left: 10%;
   color: #004d40;
 }
+@media screen and (max-width: 1100px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
+    font-size: 0.95vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
+    font-size: 2.7vw;
+  }
+}
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   z-index: +1;
-  -webkit-filter: saturate(180%);
-          filter: saturate(180%);
+  -webkit-filter: saturate(100%);
+          filter: saturate(100%);
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 {
   display: -webkit-box;
@@ -544,6 +711,24 @@ header .imagen_header {
   width: 45%;
   height: 95%;
   background-color: #90caf9;
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .img_restaurant {
   width: 100%;
@@ -586,6 +771,26 @@ header .imagen_header {
   padding-left: 10%;
   color: #004d40;
 }
+@media screen and (max-width: 1100px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
+    font-size: 0.95vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
+    font-size: 2.7vw;
+  }
+}
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
@@ -607,58 +812,234 @@ header .imagen_header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  height: 50%;
+  height: 45%;
   background-color: #fff;
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45%;
   height: 95%;
-  background-color: red;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  background-color: #90caf9;
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B1:hover {
-  -webkit-transform: translate(0px, -100px);
-          transform: translate(0px, -100px);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: +1;
+  -webkit-filter: saturate(160%);
+          filter: saturate(160%);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .img_universe {
+  width: 100%;
+  height: 70%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8vw;
+  padding-left: 5%;
+  color: #004d40;
+}
+@media screen and (max-width: 1100px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
+    font-size: 0.8vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
+    font-size: 2.7vw;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 40%;
+  width: 45%;
   height: 95%;
-  background-color: yellow;
-  -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
+  background-color: #90caf9;
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
 }
 .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .hobbies2B2:hover {
-  -webkit-transform: translate(0px, -100px);
-          transform: translate(0px, -100px);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  z-index: +1;
+  -webkit-filter: saturate(160%);
+          filter: saturate(160%);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .img_mountain {
+  width: 100%;
+  height: 70%;
+  -webkit-filter: saturate(160%);
+          filter: saturate(160%);
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+}
+.about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8vw;
+  padding-left: 5%;
+  color: #004d40;
+}
+@media screen and (max-width: 1100px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
+    font-size: 0.95vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
+    font-size: 1.7vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
+    font-size: 2.7vw;
+  }
 }
 .about_me .about_me2 {
   display: -webkit-box;
@@ -677,7 +1058,11 @@ header .imagen_header {
   width: 50%;
   height: 80vh;
   background-color: #fff;
-  display: none;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me2 {
+    display: none;
+  }
 }
 .about_me .about_me2 .about_me_imagen_fondo {
   display: -webkit-box;
@@ -772,7 +1157,16 @@ header .imagen_header {
           justify-content: center;
   width: 50%;
   height: 100vh;
+  display: none;
   background-color: #b9f6ca;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me3 {
+    width: 90%;
+    height: 48%;
+    background-color: red;
+    display: inline;
+  }
 }
 .about_me .about_me3 .cuadro3 {
   display: -webkit-box;
@@ -791,6 +1185,8 @@ header .imagen_header {
   width: 90%;
   height: 80vh;
   background-color: pink;
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
 .Curriculum_vitae {
