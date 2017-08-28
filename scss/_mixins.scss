@@ -81,13 +81,13 @@
 	display:flex;
 	flex-flow: column nowrap;
 	align-items: start;
-	justify-content: end;
+	justify-content: flex-end;
 
 }
 @mixin flex_column_start_end{
 	display:flex;
 	flex-flow: row nowrap;
-	align-items: end;
+	align-items: flex-end;
 	justify-content: start;
 
 }
@@ -172,7 +172,7 @@
 	display:flex;
 	flex-flow: row nowrap;
 	align-items: flex-start;
-	justify-content: end;
+	justify-content: flex-end;
 
 }
 @mixin flex_row_end_start{

@@ -454,6 +454,7 @@ header .imagen_header {
     width: 100%;
     height: 100%;
     margin-top: 0%;
+    margin-left: 0%;
   }
 }
 .about_me .about_me1 .cuadro1 .hobbies1 {
@@ -664,8 +665,8 @@ header .imagen_header {
   width: 100%;
   height: 100%;
   font-size: 0.8vw;
-  padding-left: 10%;
   color: #004d40;
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A1 .mtb_texto {
@@ -768,8 +769,8 @@ header .imagen_header {
   width: 100%;
   height: 100%;
   font-size: 0.8vw;
-  padding-left: 10%;
   color: #004d40;
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2A .hobbies2A2 .restaurant_texto {
@@ -913,8 +914,8 @@ header .imagen_header {
   width: 100%;
   height: 100%;
   font-size: 0.8vw;
-  padding-left: 5%;
   color: #004d40;
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .universe .universe_texto {
@@ -1018,8 +1019,8 @@ header .imagen_header {
   width: 100%;
   height: 100%;
   font-size: 0.8vw;
-  padding-left: 5%;
   color: #004d40;
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .about_me .about_me1 .cuadro1 .hobbies2 .hobbies2B .mountain .mountain_texto {
@@ -1074,7 +1075,7 @@ header .imagen_header {
           flex-flow: row nowrap;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -1128,6 +1129,7 @@ header .imagen_header {
   font-size: 2.5vw;
   font-family: 'Dancing Script', cursive;
   color: #90caf9;
+  margin-top: 10%;
 }
 .about_me .about_me2 .about_me_texto .conocerme {
   color: #42a5f5;
@@ -1183,10 +1185,372 @@ header .imagen_header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 90%;
-  height: 80vh;
+  height: 78.2%;
   background-color: pink;
   margin-top: 10%;
+}
+.about_me .about_me3 .cuadro3 .cabecera_cuadro3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  font-size: 2.5vw;
+  color: #90caf9;
+  background-color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 {
+    height: 10%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 {
+    height: 5%;
+  }
+}
+.about_me .about_me3 .cuadro3 .cabecera_cuadro3 .titulo_cabecera_cuadro3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width: 1100px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 .titulo_cabecera_cuadro3 {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 .titulo_cabecera_cuadro3 {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 .titulo_cabecera_cuadro3 {
+    font-size: 4.3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_me .about_me3 .cuadro3 .cabecera_cuadro3 .titulo_cabecera_cuadro3 {
+    font-size: 5.5vw;
+  }
+}
+.about_me .about_me3 .cuadro3 .cabecera_cuadro3 .texto_cabecera_cuadro3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
   margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1.1vw;
+  color: #3F729B;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70%;
+  background-color: #90caf9;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .solidaridad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .solidaridad .cabecera_solidaridad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-family: cursive;
+  color: #fff;
+  font-weight: bold;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .solidaridad .body_solidaridad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  color: #37474F;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .respeto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .respeto .cabecera_respeto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-family: cursive;
+  color: #fff;
+  font-weight: bold;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3A .respeto .body_respeto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  color: #37474F;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .igualdad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .igualdad .cabecera_igualdad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-family: cursive;
+  color: #fff;
+  font-weight: bold;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .igualdad .body_igualdad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  color: #37474F;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .deber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .deber .cabecera_deber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-family: cursive;
+  color: #fff;
+  font-weight: bold;
+}
+.about_me .about_me3 .cuadro3 .body_cuadro3 .body_cuadro3B .deber .body_deber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 70%;
+  color: #37474F;
 }
 
 .Curriculum_vitae {
@@ -2477,6 +2841,27 @@ header .imagen_header {
   .feedback .feedback_body .textarea_marco11 {
     display: none;
   }
+}
+
+.last_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  font-size: 5vw;
 }
 
 /*# sourceMappingURL=estilos.css.map */
