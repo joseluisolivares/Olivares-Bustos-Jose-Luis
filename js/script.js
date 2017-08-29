@@ -59,11 +59,14 @@ function guardar_feedback(){
 	var textarea_marco = $(".textarea_marco").val();
 	var textarea_marco2 = $(".textarea_marco2").val();
 	var textarea_marco3 = $(".textarea_marco3").val();
+	var textarea_marco4 = $(".textarea_marco4").val();
+	var textarea_marco5 = $(".textarea_marco5").val();
+	var textarea_marco6 = $(".textarea_marco6").val();
+	var textarea_marco7 = $(".textarea_marco7").val();
+	var textarea_marco8 = $(".textarea_marco8").val();
+	var textarea_marco9 = $(".textarea_marco9").val();
+	var textarea_marco10 = $(".textarea_marco10").val();
 	var textarea_marco11 = $(".textarea_marco11").val();
-	var textarea_marcoA = $(".textarea_marcoA").val();
-	var textarea_marcoB = $(".textarea_marcoB").val();
-	var textarea_marcoC = $(".textarea_marcoC").val();
-	var textarea_marcoD = $(".textarea_marcoD").val();
 
 	if (textarea_marco != "") {
 		$(".textarea_marco").prop('disabled', true);
@@ -74,20 +77,29 @@ function guardar_feedback(){
 	if (textarea_marco3 != "") {
 		$(".textarea_marco3").prop('disabled', true);
 	}
+	if (textarea_marco4 != "") {
+		$(".textarea_marco4").prop('disabled', true);
+	}
+	if (textarea_marco5 != "") {
+		$(".textarea_marco5").prop('disabled', true);
+	}
+	if (textarea_marco6 != "") {
+		$(".textarea_marco6").prop('disabled', true);
+	}
+	if (textarea_marco7 != "") {
+		$(".textarea_marco7").prop('disabled', true);
+	}
+	if (textarea_marco8 != "") {
+		$(".textarea_marco8").prop('disabled', true);
+	}
+	if (textarea_marco9 != "") {
+		$(".textarea_marco9").prop('disabled', true);
+	}
+	if (textarea_marco10 != "") {
+		$(".textarea_marco10").prop('disabled', true);
+	}
 	if (textarea_marco11 != "") {
 		$(".textarea_marco11").prop('disabled', true);
-	}
-	if (textarea_marcoA != "") {
-		$(".textarea_marcoA").prop('disabled', true);
-	}
-	if (textarea_marcoB != "") {
-		$(".textarea_marcoB").prop('disabled', true);
-	}
-	if (textarea_marcoC != "") {
-		$(".textarea_marcoC").prop('disabled', true);
-	}
-	if (textarea_marcoD != "") {
-		$(".textarea_marcoD").prop('disabled', true);
 	}
 	
 	

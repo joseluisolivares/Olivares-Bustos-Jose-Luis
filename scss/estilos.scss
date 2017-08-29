@@ -147,19 +147,6 @@ header{
    				from { transform: rotate(0deg)  translate(-100px) rotate(0deg); }
     			to { transform: rotate(360deg) translate(-100px) rotate(-360deg); }
 }
-
-				// @keyframes right {
-    //            		0%   { transform: translate(-95px);  }
-    //        			50%  { transform: translate(95px);   }
-    //        			100% { transform: translate(-95px);  }
-    //         	}
-
-    //         	@keyframes left {
-    //             	0%   { transform: translate(95px);   }
-    //         		50%  { transform: translate(-95px);  }
-    //         		100% { transform: translate(95px);   }
-    //         	}
-            	
 				@media screen and (max-width: 950px){
 				font-size: 1.7vw;
 				width: 10vw;
@@ -297,15 +284,26 @@ header{
 			animation: 5s bote 10000;
 			@keyframes bote {
 			  20%, 50%, 80% {
-			    -moz-transform: translateY(0);
+			    // -moz-transform: translateY(0);
+			    // -webkit-transform: translateY(0);
+			    transform: translateY(0);
+
 			  }
 
 			  40% {
-			    -moz-transform: translateY(-30px);
+			    // -moz-transform: translateY(-30px);
+			    // -webkit-transform: translateY(-30px);
+			    transform: translateY(-30px);
+
+
 			  }
 
 			  65% {
-			    -moz-transform: translateY(-15px);
+			    // -moz-transform: translateY(-15px);
+			    // -webkit-transform: translateY(-15px);
+			    transform: translateY(-15px);
+
+
 			  }
 			}
 			@media screen and (max-width: 600px){
@@ -1677,7 +1675,7 @@ header{
 		height: 30vh;
 		background-color: #212121;
 		.guardar_feedback{
-			background-color: #3F729B;
+			background-color: #424242;
 			// border:none;
 			border-color: $blanco;
 			width: 20%;
@@ -1747,114 +1745,150 @@ header{
 
 	}
 	.feedback_body{
-		@include flex_row_center_around;
+		@include flex_column_center_around;
 		width: 100%;
 		height: 70vh;
-		background-color: #263238;
-		@media screen and (max-width: 800px){
-			@include flex_column_center_around;
-	
+		// background-color: #263238;
+		.feedback_body1{
+		@include flex_column_center_around;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			.first_field{
+				@include flex_row_center_center;
+				width: 100%;
+				height: 33.3%;
+				.textarea_marco{
+					// border: 3px solid darkblue; 
+					width: 14.285%;
+					height: 100%;
+					margin-right: 14.285%;
+					@media screen and (max-width: 700px){
+						width: 25%;
+						margin-right: 5%;
+						height: 90%;
+					}
+					@media screen and (max-width: 500px){
+						width: 75%;
+						margin-right: 0%;
+						height: 90%;
+
+					}
+				}
+				.textarea_marco2{
+					@extend .textarea_marco;
+					@media screen and (max-width: 700px){
+						display: none;
+					}
+
+				}
+				.textarea_marco3{
+					@extend .textarea_marco;
+					@media screen and (max-width: 700px){
+						display: none;
+					}
+				}
+				.textarea_marco4{
+					@extend .textarea_marco;
+					margin-right: 0%;
+					@media screen and (max-width: 500px){
+						display: none;
+					}
+				}
 			}
-		.opinion_movil{
-			display:none;
-			@media screen and (max-width: 800px){
-			display:inline;
-				
+
+
+			.second_field{
+				@include flex_row_center_center;
+				width: 100%;
+				height: 33.3%;
+				.textarea_marco5{
+					// border: 3px solid darkblue; 
+					width: 14.285%;
+					height: 100%;
+					margin-right: 14.285%;
+					@media screen and (max-width: 700px){
+						width: 25%;
+						margin-right: 5%;
+						height: 90%;
+					}
+					@media screen and (max-width: 500px){
+						width: 75%;
+						margin-right: 0%;
+						height: 90%;
+
+					}
+				}
+				.textarea_marco6{
+					@extend .textarea_marco5;
+					@media screen and (max-width: 500px){
+						display:none;
+					}
+				}
+				.textarea_marco7{
+					@extend .textarea_marco5;
+					margin-right: 0%;
+					@media screen and (max-width: 500px){
+						display:none;
+					}
+				}
 			}
-		}
-		.opinion_titulo{
-			color:$blanco;
-		}
-		.marco{
-			width: 20vw;
-			height: 30vh;	
-			margin-bottom: 60vh;	
-			margin-left: 0vw;
-			@media screen and (max-width: 800px){
-			display:none;
-				
-			}	
-	
-		}
-		.marco2{
-			@extend .marco;
-			margin-bottom: -35vh;	
-			margin-left: 0vw;
-			@media screen and (max-width: 800px){
-				display:none;
-			}			
+			.third_field{
+				@include flex_row_between_center;
+				width: 100%;
+				height: 33.3%;
+				.textarea_marco8{
+					// border: 3px solid darkblue; 
+					width: 14.285%;
+					height: 100%;
+					margin-right: 14.285%;
+					@media screen and (max-width: 700px){
+						width: 25%;
+						margin-right: 5%;
+						height: 90%;
+					}
+					@media screen and (max-width: 500px){
+						width:75%;
+						height: 90%;
+						margin-right:0%; 
+
+					}
+				}
+				.textarea_marco9{
+					@extend .textarea_marco8;
+					@media screen and (max-width: 700px){
+						display: none;
+					}
+
+				}
+				.textarea_marco10{
+					@extend .textarea_marco8;
+					@media screen and (max-width: 700px){
+						display: none;
+					}
+				}
+				.textarea_marco11{
+					@extend .textarea_marco8;
+					margin-right: 0%;
+					@media screen and (max-width: 500px){
+						display:none;
+					}
+				}
+			}
 			
-		}
-		.marco3{
-			@extend .marco;
-			margin-bottom: 30vh;	
-			margin-left: 1vw;	
-			@media screen and (max-width: 800px){
-			display:none;
-				
-			}		
-	
-		}
-		.marco11{
-			@extend .marco;
-			margin-bottom: 80vh;	
-			margin-left: 0vw;
-			@media screen and (max-width: 800px){
-				display:none;
-			}			
-	
-		}
-		.textarea_marco{
-			margin-bottom: 60vh;
-			height: 23vh;
-			width: 16.8vw;
-			border:none;
-			margin-left: -24.6vw;
-			background-color: lightgray;
-			@media screen and (max-width: 800px){
-			display:none;
-				
-			}
-		}
-		.textarea_marco2{
-			margin-left: -24vw;
-			width: 15.5vw;
-			border:none;
-			margin-bottom: -35vh;	
-			height: 23vh;
-			background-color: lightgray;
-			@media screen and (max-width: 800px){
-				display:none;
-			}
 
 		}
-		.textarea_marco3{
-			margin-left: -23vw;
-			width: 13vw;
-			border:none;
-			margin-bottom: 30vh;
-			height: 16.5vh;
-			background-color: lightgray;
-			@media screen and (max-width: 800px){
-			display:none;
-				
-			}
-
-		}
-		.textarea_marco11{
-			margin-left: -25.3vw;
-			width: 17.7vw;
-			border:none;
-			margin-bottom: 80vh;
-			height: 24.4vh;
-			background-color: lightgray;
-			@media screen and (max-width: 800px){
-				display:none;
-			}
-
-		}
-	}		
+	}	
 }
+								
+
+
+
+
+
+
+
+
 								// FOOTER
 .last_section{
 	@include flex_column_center_center;
