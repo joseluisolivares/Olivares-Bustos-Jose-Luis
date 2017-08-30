@@ -1870,12 +1870,15 @@ header .imagen_header {
 @keyframes bote {
   20%, 50%, 80% {
     -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
   }
   65% {
     -moz-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
   }
 }
 .Curriculum_vitae .body_cv .body_cv1 .body_cv1a .cv_imagen1:hover .click_abajo {
@@ -1996,12 +1999,15 @@ header .imagen_header {
 @keyframes bote {
   20%, 50%, 80% {
     -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
   }
   65% {
     -moz-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
   }
 }
 .Curriculum_vitae .body_cv .body_cv1 .body_cv1b .cv_imagen1:hover .click_abajo {
@@ -2121,12 +2127,15 @@ header .imagen_header {
 @keyframes bote {
   20%, 50%, 80% {
     -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
   }
   65% {
     -moz-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
   }
 }
 .Curriculum_vitae .body_cv .body_cv1 .body_cv1c .cv_imagen1:hover .click_abajo {
@@ -2264,12 +2273,15 @@ header .imagen_header {
 @keyframes bote {
   20%, 50%, 80% {
     -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
   }
   65% {
     -moz-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
   }
 }
 .Curriculum_vitae .body_cv .body_cv2 .body_cv2a .cv_imagen1:hover .click_abajo {
@@ -2391,12 +2403,15 @@ header .imagen_header {
 @keyframes bote {
   20%, 50%, 80% {
     -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
   40% {
     -moz-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
   }
   65% {
     -moz-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
   }
 }
 .Curriculum_vitae .body_cv .body_cv2 .body_cv2b .cv_imagen1:hover .click_abajo {
@@ -2711,7 +2726,7 @@ header .imagen_header {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   background-color: #212121;
 }
 .feedback .feedback_header .guardar_feedback {
@@ -2835,7 +2850,7 @@ header .imagen_header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  height: 70vh;
+  height: 65vh;
 }
 .feedback .feedback_body .feedback_body1 {
   display: -webkit-box;
@@ -3044,6 +3059,7 @@ header .imagen_header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 7%;
   width: 100%;
   height: 50%;
   color: #000;
@@ -3052,6 +3068,26 @@ header .imagen_header {
 }
 .last_section .redes_sociales .joseluisolivares_2017 {
   margin-top: 3%;
+}
+.last_section .cesped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+  background-image: url(../imagenes/cesped.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilos.css.map */
